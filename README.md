@@ -1,24 +1,28 @@
-# aws-data-pipeline-demo
 # AWS Data Pipeline Demo
 
-This project demonstrates a basic data engineering workflow:
+## Project Overview
+This project simulates a production-style data engineering workflow, including data extraction, transformation, and loading using Python.
 
-Source (CSV / SQL)
-→ Upload to AWS S3  
-→ Data processing using Python  
-→ Output cleaned data for analytics  
+## Architecture
+Raw Data (CSV)
+→ Data Cleaning (Pandas)
+→ Processed Data Output
+→ Ready for Cloud Storage (AWS S3)
 
-## Tools Used
+## Tools & Technologies
 - Python
 - Pandas
-- AWS S3 (concept)
+- AWS S3 (conceptual)
 - SQL
-- Data pipeline design
+- ETL pipeline design
 
-## Description
-This project simulates a simple ETL process:
-1. Load raw data
-2. Perform data cleaning and transformation
-3. Save processed data for downstream analytics
+## ETL Process
+1. Extract raw data from source
+2. Perform data validation and cleaning
+3. Remove null values and duplicates
+4. Save processed data for downstream analytics
 
-This repository reflects my hands-on learning and practice in cloud data engineering.
+## How to Run
+
+```bash
+python etl.py
